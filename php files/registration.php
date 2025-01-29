@@ -8,6 +8,10 @@ $username_err = $firstname_err = $lastname_err = $email_err  = $password_err = $
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Honeypot field check (Bot Protection)
+    if (!empty($_POST["honeypot"])) {
+        die("Spam detected. Action blocked.");
+    }
     // Validate username
     if(empty(trim($_POST["username"]))) {
         $username_err = "<br><i>Please enter a username</i>";
@@ -261,6 +265,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="fill">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <!-- Honeypot field (hidden) -->
+<input type="text" name="honeypot" id="honeypot" style="display:none;">
                     <input type="text" placeholder="Enter your username" name="username" minlength="2" maxlength="20" onkeyup="return forceLower(this);" value="<?php echo htmlspecialchars($username); ?>" required>
                     <span><?php echo htmlspecialchars($username_err); ?></span><br>
 
