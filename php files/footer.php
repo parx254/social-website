@@ -90,7 +90,7 @@
   </div>
       <div class='footer-about'>
           <div class='copyright'>
-    &copy; Social Destinations <span id="currentYear"></span>, Inc. All rights reserved · <a href='privacy-policy.php'>Privacy</a>
+    &copy;2025 Social Destinations<span id="currentYear"></span>, Inc. All rights reserved 路 <a href='privacy-policy.php'>Privacy</a>
 </div>
           <ul class='about-list'>
               <li>
@@ -138,7 +138,7 @@
   if(!isset($_SESSION['username']) || empty($_SESSION['username'])) { 
       echo '<div class="footer-list">
               <ul>
-                  <li class="not-active">
+                    <li class="' . ($activePage == 'about' ? 'active' : 'not-active') . '">
                       <a href="https://www.socialdestinations.com/about.php" style="text-decoration: none">
                           <i class="fad fa-info-circle" aria-hidden="true"></i>
                       </a>
