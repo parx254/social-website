@@ -33,6 +33,7 @@ session_start();
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="icon" href="/favicon/favicon.ico">
       <link rel="manifest" href="/manifest.json">
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
@@ -70,6 +71,7 @@ session_start();
         input#searchbox2[type=search],nav #menu li.active,nav #menu li.active:hover,nav #menu li:hover  {border-bottom:2px solid <?php echo $currentcolor; ?>}
         .overlay .closebtn {color:<?php echo $currentcolor; ?>}
         .overlay #response2 li a {border-bottom:1px solid <?php echo $currentcolor; ?>}
+        .feedimg, .postcontenttop img, .postcontenttop video {border:2px solid <?php echo $currentcolor; ?>; border-radius:10px}
       </style>
   <header>
     <nav>
@@ -204,7 +206,7 @@ session_start();
         <li class="<?php if($activePage =='explore'){echo 'active';}else{echo 'not-active';}?>" ><a href='explore.php'>Explore</a></li>
                   <?php
   if(!isset($_SESSION['username']) || empty($_SESSION['username'])) { 
-      echo '<li class="<li class="not-active"><a href="about.php">About</a></li>
+      echo '<li class="' . ($activePage == 'about' ? 'active' : 'not-active') . '"><a href="about.php">About</a></li>
 <li class="not-active"><a href="login.php">Login</a></li>';
       
   }
