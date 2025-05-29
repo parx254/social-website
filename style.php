@@ -30,7 +30,6 @@
 /* Base styles for body */
  body {
 	 font-family: MontRegular, sans-serif;
-	 background: #fff;
 	 color: #222;
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: auto;
@@ -94,14 +93,6 @@
  100% {
 	 opacity: 1;
 	 transform: rotate(360deg);
-}
-/* Base styles for body */
- body {
-	 color: #222;
-	 font-family: MontRegular, sans-serif;
-	 -moz-osx-font-smoothing: auto;
-	 overflow-x: hidden;
-	 -webkit-font-smoothing: antialiased;
 }
 /* Heading 1 styles */
  h1 {
@@ -1437,9 +1428,6 @@
 	 border-radius: 8px;
 	 width: 100%;
 }
- .prof_actions button {
-	 padding: 3px 6px;
-}
  .city-hero-text h1 {
 	 color: #fff;
 	 text-shadow: none;
@@ -1471,9 +1459,6 @@
 }
  .cell1 video:hover {
 	 opacity: 0.3;
-}
- table {
-	 border: 0;
 }
  .hero, .prof_info, .profileinfo {
 	 border-radius: 5px;
@@ -1511,8 +1496,8 @@
 	 transition: 0.2s ease-in-out 0.2s;
 }
  .editprofposts button, .profpost button {
-	 background: #111 1;
 	 cursor: hand;
+	 background: #efefef;
 	 margin: 10px 0;
 	 o-transition: 0.2s ease-in-out 0.2s;
 	 padding: 5px;
@@ -1690,6 +1675,7 @@
 	 border-radius: 0;
 	 color: #000;
 	 text-transform: uppercase;
+	 padding: 3px 6px;
 }
  .prof_actions button:hover {
 	 background: #fff;
@@ -1768,6 +1754,7 @@
 	 color: #000;
 	 padding: 5px;
 	 box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+	 border: 0;
 }
  table button {
 	 padding: 5px;
