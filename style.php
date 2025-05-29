@@ -2129,6 +2129,7 @@
 		 text-decoration: none;
 		 border: none;
 	}
+	 
 	 .footer-content {
 		 display: flex;
 		 flex-wrap: wrap;
@@ -2358,13 +2359,23 @@
 		 margin-top: 60px;
 	}
 	 .footer-list {
-		 flex: 1 0 50%;
-		 max-width: 50%;
-	}
-	 .footer-responsive-content .footer-list {
-		 flex: 1 0 33.33%;
-		 max-width: 33.33%;
-	}
+flex: 1 0 33.33%;
+max-width: 33.33%;
+}
+
+.footer-responsive-content .footer-list {
+flex: 1 0 25%;
+max-width: 20%;
+}
+
+.footer-content {
+display: none;
+}
+
+.footer-responsive-content {
+display: flex;
+background: #fff;
+}
 	 .feedposts {
 		 grid-template-columns: repeat(1, 1fr);
 	}
