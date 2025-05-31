@@ -1173,8 +1173,7 @@
 }
 /* Footer base styles */
  .footer {
-	 background-color: #fff f;
-	 border-top: 1px solid #f5f5f5;
+	 background-color: #fff;
 	 padding: 30px 80px;
 	 transition: 0.2s ease-in-out 0.2s;
 	 width: 100%;
@@ -1274,11 +1273,11 @@
 	 padding: 5px;
 }
  .feedposts button:hover {
-	 background: #0047ab;
+	 background: #34be9d;
 }
  .postcontent button:hover {
 	 transition: 0.2s ease-in-out 0.2s;
-	 background: #0047ab;
+	 background: #34be9d;
 }
  .cell1 video:hover, .feedPostTitle img:hover, .openbtn {
 	 transition: 0.2s ease-in-out 0.2s;
