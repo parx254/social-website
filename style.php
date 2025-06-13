@@ -860,14 +860,14 @@
 }
  .prof_names .text-box h2, .prof_names .text-box h5 {
 	 background: 0 0;
-	 color: #0047ab;
+	 color: #fff;
 	 margin: 5px 0;
 }
 /* User profile card styling */
  .profile {
 	 border-radius: 10px;
 	 display: block;
-	 background: #ffc845;
+	 background: #0047ab;
 	 margin: 20px auto;
 	 padding: 20px;
 	 box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
