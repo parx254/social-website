@@ -256,8 +256,8 @@
 	 background-color: #fff;
 	 border-bottom: 1px solid #f9f9f9;
 	 border-radius: 5px;
-	 margin: 2px 10px;
 	 padding: 0 5px;
+	 margin: 2px auto;
 	 left: 80px;
 	 right: 80px;
 	 max-width: 1600px;
